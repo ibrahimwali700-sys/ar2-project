@@ -6,7 +6,8 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <!-- تمت إضافة videoTexture: true هنا لمنع تشويه الكاميرا -->
+    <a-scene embedded arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
       
       <!-- الكود يبحث الآن عن علامة كانجي -->
       <a-marker preset="kanji">
